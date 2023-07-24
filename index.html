@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+  <meta name="description" content="Scanner aims to collect live sources of the Tasmania Government Radio Network and make them available in one easy to use website, available on Android, Windows, MAC and iPhone device's.">
+ 
+  <title>Tas GRN Scanner</title>
+  <link rel="stylesheet" href="theme.css">
+
+<!-- set info links for social media posts  -->
+  <meta property="og:title" content="Scanner"/>
+  <meta property="og:url" content="https://scanner.ga"/>
+  <meta property="og:site_name" content="Scanner"/>
+  <meta property="og:image" content="https://github.com/ElijahCuff/Tas-GRN-Radio/raw/main/Screenshot_20220810_214514.jpg"/>
+  <meta property="og:type" content="document"/>
+  <meta property="og:description" content="Scanner aims to collect live sources of the Tasmania Government Radio Network"/>
+  
+<!-- link App manifest file to tell the browser we are an application not a webpage. -->
+  <link rel="manifest" href="/manifest.json">
+ 
+<!-- Show we are capable of being a Web Application to the browser -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+
+<!-- Set the Web App information -- >
+   <meta name="apple-mobile-web-app-title" content="Scanner">
+   <meta name="mobile-web-app-title" content="Scanner">
+   <meta name="description" content="Scanner aims to collect live sources of the Tasmania Government Radio Network">
+
+
+
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="player">
+    <div class="player__header">
+
+      <div class="player__img player__img--absolute slider">
+
+        <button class="player__button player__button--absolute--nw playlist">
+
+          <img src="http://physical-authority.surge.sh/imgs/icon/playlist.svg" alt="playlist-icon">
+
+        </button>
+
+        <button class="player__button player__button--absolute--center play">
+
+          <img src="http://physical-authority.surge.sh/imgs/icon/play.svg" alt="play-icon">
+          <img src="http://physical-authority.surge.sh/imgs/icon/pause.svg" alt="pause-icon">
+
+        </button>
+
+        <div class="slider__content">
+          <img class="img slider__img" src="south.png" alt="cover">
+<img class="img slider__img" src="north.png" alt="cover">
+        
+        </div>
+
+      </div>
+
+      <div class="player__controls">
+
+        <button class="player__button back">
+
+          <img class="img" src="http://physical-authority.surge.sh/imgs/icon/back.svg" alt="back-icon">
+
+        </button>
+        
+         
+        <p class="player__context slider__context">
+
+          <strong class="slider__name"></strong>
+          <span class="player__title slider__title"></span>
+
+        </p>
+
+        <button class="player__button next">
+
+          <img class="img" src="http://physical-authority.surge.sh/imgs/icon/next.svg" alt="next-icon">
+
+        </button>
+
+        <div class="progres" style="display: none">
+
+           <div class="progres__filled"></div> 
+
+        </div>
+      </div>
+
+    </div>
+
+    <ul class="player__playlist list">
+      <li class="player__song">
+
+        <img class="player__img img" src="south.png" alt="cover">
+
+        <p class="player__context">
+
+          <span class="flex">
+
+            <span class="player__title">South</span>
+
+          </span>
+          
+          <b class="player__song-name">Hobart & Surroundings</b>
+          <b style="font-size:10px;">Mt Wellington</b>
+        </p>
+
+        <audio class="audio" src="https://broadcastify.cdnstream1.com/35239"></audio>
+
+      </li>
+      <li class="player__song">
+        <img class="player__img img" src="north.png" alt="cover">
+
+        <p class="player__context">
+
+          <span class="flex">
+
+            <span class="player__title">North</span>
+
+          </span>
+
+          <b class="player__song-name">Launceston & Surroundings</b>
+<b style="font-size:10px;">Mt Horror</b>
+        </p>
+
+        <audio class="audio" src="https://broadcastify.cdnstream1.com/40935"></audio>
+
+      </li>
+    </ul>
+
+<div width="100%" align="center">
+<p width="100%" align="center" style="margin:4px;font-size:15px;margin-top:5px;">
+<textarea style="width:100%;border:1px;border-radius:10px; font-size:10px;margin-left:30px;margin-right:30px; height:200px;">Call sign	 Use
+Alpha	 Administration
+Bravo	 Burnie General Duties
+Charlie	 CIB Detectives
+Delta	 Devonport General Duties
+Echo	 Eastern Shore General Duties
+Foxtrot	 Georgetown General Duties
+Gulf	 Glenorchy General Duties
+Hotel	 Hobart General Duties
+India	 Northern Midlands
+Juliet	 Domestic Violence Unit
+Kilo	 Kingston General Duties
+Lima	 Launceston General Duties
+Mike	 Motorcycle Officer
+November New Norfolk General Duties
+Oscar	 Southern & East Coast Country
+Papa	 Road and Public Order Squad
+Qubec	 Queenstown & Surrounding Areas
+Romeo	 Pushbikes
+Sierra	 Forensics
+Tango	 Traffic/Crash Investigations
+Uniform	 Ulverstone General Duties
+Victor	 Technicians
+Whisky	 Crime Management Units
+X-Ray	 CBD Foot Patrols
+Yankee	 Search & Rescue/Helicopter
+Zulu	 Misc/Drugs/Special Operations</textarea></p><br>
+</div>
+<!-- partial -->
+  <script  src="theme.js"></script>
+
+</body> 
+</html>
